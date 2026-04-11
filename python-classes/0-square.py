@@ -1,6 +1,12 @@
 #!/usr/bin/python3
+"""
+This is an example for creating a class.
+"""
 
 
 class Square:
-    """An empty class that defines a square"""
+    """
+    Square class represents a square.
+    Now this class is empty.
+    """
     pass
