@@ -1,0 +1,53 @@
+[33m699530b[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m NETWORK
+[33mb2b87b4[m NETWORK
+[33m92c471d[m NETWORK
+[33mf27bdb8[m NETWORK
+[33m43e5d3c[m NETWORK
+[33m308804c[m[33m ([m[1;31morigin/main[m[33m)[m Update 1-hbtn_header.py
+[33m8f5806b[m Create 1-hbtn_header.py
+[33mdb8bce6[m NETWORK
+[33m746a554[m NETWORK
+[33md082d4a[m NETWORK
+[33m75082fd[m NETWORK
+[33m91f774c[m sql
+[33m951083a[m network
+[33m37262d6[m Create 16-no_link.sql
+[33m043c3bd[m Create 15-groups.sql
+[33m14fc65b[m Create 14-average.sql
+[33m6071027[m Create 13-change_class.sql
+[33m09be6dd[m Create 12-no_cheating.sql
+[33m83de4e1[m Create 11-best_score.sql
+[33mee0b7fc[m Create 10-top_score.sql
+[33m75974b1[m Create 9-full_creation.sql
+[33mc124c28[m Create 8-count_89.sql
+[33md63e92f[m Create 7-insert_value.sql
+[33m5ace4c3[m Create 6-list_values.sql
+[33m3f9c42e[m sql
+[33m18c8e61[m sql
+[33m1730683[m sql
+[33md171def[m sql
+[33m5ddbe45[m fs
+[33m99ef263[m fs
+[33m32cd17b[m fs
+[33md020c51[m sql
+[33m41382d1[m exceptions
+[33mb37280f[m exceptions
+[33m0d89fa6[m exceptions
+[33mc86d886[m exceptions
+[33m189826b[m exceptions
+[33m6613961[m exceptions
+[33m2236373[m exceptions
+[33mf45b256[m exceptions
+[33m482667e[m exceptions
+[33m4f2b9c9[m Create 6-square.py
+[33m4560669[m Create 5-square.py
+[33m2669195[m Create 4-square.py
+[33m9f17ad5[m Update 3-square.py
+[33m9d870fa[m Create 3-square.py
+[33ma32749d[m Create 2-square.py
+[33mc9f1823[m Create 1-square.py
+[33mfd8f87c[m Update 0-square.py
+[33m126e0d9[m Remove cache files
+[33m6ed5a13[m fs
+[33ma51d312[m fs
+[33mb4b4f32[m Initial commit
