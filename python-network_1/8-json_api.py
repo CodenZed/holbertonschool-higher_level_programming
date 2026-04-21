@@ -20,7 +20,7 @@ if __name__ == "__main__":
     try:
         # Send POST request
         r = requests.post(url, data=payload)
-        
+
         # Parse JSON response
         response_json = r.json()
 
