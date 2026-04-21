@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+"""
+Fetches https://intranet.hbtn.io/status using the requests package.
+"""
+import requests
+
+
+if __name__ == "__main__":
+    url = "https://intranet.hbtn.io/status"
+    r = requests.get(url)
+    
+    print("Body response:")
+    # r.text returns the content as a string
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))

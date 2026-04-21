@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+üq`üq#!/usr/bin/python3
 """Gets X-Request-Id header value"""
 
 import sys
