@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-Sends a POST request to http://0.0.0.0:5000/search_user with a letter as a parameter.
-Handles JSON validation and empty results.
+Sends a POST request to http://0.0.0.0:5000/search_user
+with a letter as a parameter.
 """
 import requests
 import sys
 
 
 if __name__ == "__main__":
-    # Determine the search letter 'q'
+    # Get letter from arguments or default to empty string
     if len(sys.argv) < 2:
         q = ""
     else:
@@ -18,21 +18,20 @@ if __name__ == "__main__":
     payload = {'q': q}
 
     try:
-        # Send the POST request
+        # Send POST request
         r = requests.post(url, data=payload)
-
-        # Parse the response as JSON
-        # requests.json() raises a ValueError if the response is not valid JSON
+        
+        # Parse JSON response
         response_json = r.json()
 
         if not response_json:
             print("No result")
         else:
-            # Display the id and name if the dictionary is not empty
-            user_id = response_json.get('id')
-            user_name = response_json.get('name')
-            print("[{}] {}".format(user_id, user_name))
+            # Safely get id and name
+            u_id = response_json.get('id')
+            u_name = response_json.get('name')
+            print("[{}] {}".format(u_id, u_name))
 
     except ValueError:
-        # Catch JSON decoding errors
+        # Handle invalid JSON formatting
         print("Not a valid JSON")

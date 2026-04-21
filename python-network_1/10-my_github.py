@@ -18,7 +18,7 @@ if __name__ == "__main__":
     try:
         # Parse response as JSON
         user_data = r.json()
-        
+
         # Display the 'id' value if found, otherwise None
         # GitHub returns a JSON with an 'id' key on success
         # If authentication fails, 'id' won't be in the response
