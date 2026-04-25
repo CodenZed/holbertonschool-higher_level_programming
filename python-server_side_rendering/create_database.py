@@ -1,11 +1,17 @@
 import sqlite3
+import os
 
 def create_database():
-    conn = sqlite3.connect('products.db')
+
+    # ---- Remove broken DB if it exists ----
+    if os.path.exists("products.db"):
+        os.remove("products.db")
+
+    conn = sqlite3.connect("products.db")
     cursor = conn.cursor()
 
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS Products (
+        CREATE TABLE Products (
             id INTEGER PRIMARY KEY,
             name TEXT NOT NULL,
             category TEXT NOT NULL,
@@ -13,18 +19,16 @@ def create_database():
         )
     ''')
 
-    cursor.execute('DELETE FROM Products')
-
     cursor.execute('''
         INSERT INTO Products (id, name, category, price)
         VALUES
         (1, 'Laptop', 'Electronics', 799.99),
-        (2, 'Coffee Mug', 'Home Goods', 15.99),
-        (3, 'Headphones', 'Electronics', 49.99)
+        (2, 'Coffee Mug', 'Home Goods', 15.99)
     ''')
 
     conn.commit()
     conn.close()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     create_database()
