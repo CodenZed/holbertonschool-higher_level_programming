@@ -30,17 +30,17 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
         # /status endpoint
         elif self.path == "/status":
             self.send_response(200)
-            self.send_header("Content-type", "application/json")
+            self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write(json.dumps({"status": "OK"}).encode())
+            self.wfile.write(b"OK")
             return
-
         # Undefined endpoints (404)
         else:
             self.send_response(404)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            self.wfile.write(json.dumps({"error": "Endpoint not found"}).encode())
+            self.send_header("Content-type", "text/plain")
+            self.wfile.write(b"Endpoint not found")
             return
 
 
